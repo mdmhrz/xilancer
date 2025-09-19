@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xilancer</title>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/c4e937c9d9.js" crossorigin="anonymous"></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#007456',
+                        secondary: "#FA8C00",
+                        base: 'white',
+                        "base-100": '#d6d3d3',
+                        "base-200": '#b4b1b1',
+                        "base-300": '#949393',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <nav class="flex items-center justify-between px-6 py-4">
+            <!-- Logo -->
+            <div class="">
+                <img alt="logo" src="/assets//logo.svg" class="w-[157.56px]"></img>
+            </div>
+
+            <!-- Menu -->
+            <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+                <li class="flex items-center gap-2">
+                    <a href="#" class="hover:text-green-600">Home</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </li>
+
+                <li><a href="#" class="hover:text-green-600">Jobs</a></li>
+                <li><a href="#" class="hover:text-green-600">Talents</a></li>
+                <li><a href="#" class="hover:text-green-600">Subscriptions</a></li>
+                <li class="flex items-center gap-2">
+                    <a href="#" class="hover:text-green-600">Pages</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </li>
+                <li><a href="#" class="hover:text-green-600">Contact</a></li>
+            </ul>
+
+            <!-- Buttons -->
+            <div class="flex items-center space-x-3">
+                <button class="border border-primary text-primary px-4 py-1 rounded-full hover:bg-green-50">
+                    Community
+                </button>
+                <button class="bg-primary text-base px-5 py-1 rounded-full hover:bg-green-800">
+                    Sign Up
+                </button>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
