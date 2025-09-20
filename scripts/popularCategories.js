@@ -2,28 +2,28 @@ $(document).ready(function () {
     var services = [
         {
             id: 1,
-            image: "/assets/popular-categories/web.svg",
+            image: "./assets/popular-categories/web.svg",
             name: "Website Development",
             description: "Designing and building responsive business websites.",
             jobs: 6
         },
         {
             id: 2,
-            image: "/assets/popular-categories/app.svg",
+            image: "./assets/popular-categories/app.svg",
             name: "Mobile App Development",
             description: "Creating apps for Android and iOS devices.",
             jobs: 18
         },
         {
             id: 3,
-            image: "/assets/popular-categories/marketing.svg",
+            image: "./assets/popular-categories/marketing.svg",
             name: "Digital Marketing",
             description: "Promoting brands through digital marketing strategies.",
             jobs: 22
         },
         {
             id: 4,
-            image: "/assets/popular-categories/video.svg",
+            image: "./assets/popular-categories/video.svg",
             name: "Video Editing",
             description: "Editing video content for various digital platforms.",
             jobs: 20

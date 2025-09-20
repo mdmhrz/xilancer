@@ -4,10 +4,10 @@ $(document).ready(function () {
             id: 1,
             category: "Design & Creative",
             title: "I will do professional Figma design for website UI/UX and mobile app interfaces",
-            bannerImage: "/assets/popular-services/service_1_banner.png",
+            bannerImage: "./assets/popular-services/service_1_banner.png",
             author: {
                 name: "Robert Bross",
-                profileImage: "/assets/popular-services/service_1_author.png",
+                profileImage: "./assets/popular-services/service_1_author.png",
                 status: "online"
             },
             rating: 4.0,
@@ -18,10 +18,10 @@ $(document).ready(function () {
             id: 2,
             category: "Design & Creative",
             title: "I will design mobile app l ike provider and customer both.",
-            bannerImage: "/assets/popular-services/service_2_banner.png",
+            bannerImage: "./assets/popular-services/service_2_banner.png",
             author: {
                 name: "John Sina",
-                profileImage: "/assets/popular-services/service_2_author.png",
+                profileImage: "./assets/popular-services/service_2_author.png",
                 status: "offline"
             },
             rating: 3.0,
@@ -32,10 +32,10 @@ $(document).ready(function () {
             id: 3,
             category: "Design & Creative",
             title: "I will create quality, SEO driven web content for your ecommerce business.",
-            bannerImage: "/assets/popular-services/service_3_banner.png",
+            bannerImage: "./assets/popular-services/service_3_banner.png",
             author: {
                 name: "Michael Anjelo",
-                profileImage: "/assets/popular-services/service_3_author.png",
+                profileImage: "./assets/popular-services/service_3_author.png",
                 status: "online"
             },
             rating: 5.0,
@@ -46,10 +46,10 @@ $(document).ready(function () {
             id: 4,
             category: "Design & Creative",
             title: "I will build responsive WordPress website design and ecommerce design.",
-            bannerImage: "/assets/popular-services/service_4_banner.png",
+            bannerImage: "./assets/popular-services/service_4_banner.png",
             author: {
                 name: "Jim Carry",
-                profileImage: "/assets/popular-services/service_4_author.png",
+                profileImage: "./assets/popular-services/service_4_author.png",
                 status: "online"
             },
             rating: 4.0,
@@ -60,10 +60,10 @@ $(document).ready(function () {
             id: 5,
             category: "Design & Creative",
             title: "I will design an attractive Youtube , thhumb for your new video",
-            bannerImage: "/assets/popular-services/service_5_banner.png",
+            bannerImage: "./assets/popular-services/service_5_banner.png",
             author: {
                 name: "Robert Plant",
-                profileImage: "/assets/popular-services/service_5_author.png",
+                profileImage: "./assets/popular-services/service_5_author.png",
                 status: "online"
             },
             rating: 5.0,
@@ -74,10 +74,10 @@ $(document).ready(function () {
             id: 6,
             category: "Design & Creative",
             title: "I will do professional dashboard design and sass product",
-            bannerImage: "/assets/popular-services/service_6_banner.png",
+            bannerImage: "./assets/popular-services/service_6_banner.png",
             author: {
                 name: "Gary More",
-                profileImage: "/assets/popular-services/service_6_author.png",
+                profileImage: "./assets/popular-services/service_6_author.png",
                 status: "offline"
             },
             rating: 5.0,
