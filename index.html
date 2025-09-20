@@ -305,6 +305,90 @@
             </div>
         </section>
 
+        <!-- Mobile App Advertise -->
+        <section
+            class="container mx-auto max-w-7xl px-6 py-10 md:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-48 lg:gap-16">
+            <!-- Card 01 -->
+            <div class="bg-secondary p-6 rounded-xl relative overflow">
+                <div class="relative z-10">
+                    <h3 class="text-2xl text-base-100 font-semibold mb-4">Download Xilancer <br>Freelance Mobile App
+                    </h3>
+                    <p class="text-base-100 mb-4 text-[14px] max-w-[300px]">Download the Xilancer App and kickstart your
+                        first
+                        freelance project &
+                        Hire top
+                        talent</p>
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/mobile-app/app-store.svg" alt="">
+                        <img src="./assets/mobile-app/play-store.svg" alt="">
+                    </div>
+                </div>
+                <img class="hidden md:block absolute bottom-0 right-3 z-12" src="./assets/mobile-app/phone.png" alt="">
+                <img class="absolute inset-0 left-0 top-0 z-0" src="./assets/mobile-app/background.png" alt="">
+            </div>
+
+            <!-- Card 02 -->
+            <div class="bg-primary p-6 rounded-xl relative overflow">
+                <div class="relative z-10">
+                    <h3 class="text-2xl text-base-100 font-semibold mb-4">Download Xilancer <br>Freelance Mobile App
+                    </h3>
+                    <p class="text-base-100 mb-4 text-[14px] max-w-[300px]">Download the Xilancer App and kickstart your
+                        first
+                        freelance project &
+                        Hire top
+                        talent</p>
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/mobile-app/app-store.svg" alt="">
+                        <img src="./assets/mobile-app/play-store.svg" alt="">
+                    </div>
+                </div>
+                <img class="absolute bottom-0 right-3 z-12" src="./assets/mobile-app/phone.png" alt="">
+                <img class="absolute inset-0 left-0 top-0 z-0" src="./assets/mobile-app/background.png" alt="">
+            </div>
+        </section>
+
+        <!-- Trending Services -->
+        <section class=" bg-primary/10">
+            <div class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
+
+                <!-- Section Title-->
+                <h2 class="mb-[40px] text-4xl text-gray-800 font-medium">Trending Services</h2>
+
+                <!-- Carousel Container -->
+                <div class="relative">
+                    <!-- Arrow left -->
+                    <button title="Previous" id="prevBtn"
+                        class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/90 transition-colors w-10 h-10 flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-left text-gray-700"></i>
+                    </button>
+
+                    <!-- Arrow right -->
+                    <button title="Next" id="nextBtn"
+                        class="absolute right-4  top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/80 transition-colors w-10 h-10 flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-right text-gray-700"></i>
+                    </button>
+
+                    <!-- Carousel Container -->
+                    <div class="carousel-container mx-12">
+                        <div id="trendingCards" class="carousel-track flex gap-8">
+                            <!-- Cards will be inserted here by jQuery -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Choose Your Plan -->
+        <section class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
+            <!-- Section Title-->
+            <h2 class="mb-[40px] text-4xl text-gray-800 font-medium text-center">Choose Your Plan</h2>
+
+            <!--Pricing Plan Cards -->
+            <div id="pricingCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            </div>
+        </section>
+
 
 
 
@@ -318,6 +402,8 @@
     <script src="./scripts/popularServices.js"></script>
     <script src="./scripts/latestJobs.js"></script>
     <script src="./scripts/testimonials.js"></script>
+    <script src="./scripts/trendingServices.js"></script>
+    <script src="./scripts/pricing.js"></script>
 </body>
 
 </html>

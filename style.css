@@ -3,3 +3,36 @@
 body {
     font-family: "Poppins", serif;
 }
+
+/* Trending Services Related */
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card {
+    flex: 0 0 auto;
+}
+
+/* Responsive card widths */
+@media (max-width: 767px) {
+    .service-card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .service-card {
+        width: calc(50% - 16px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-card {
+        width: calc(33.333% - 21.333px);
+    }
+}
