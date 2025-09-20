@@ -31,6 +31,7 @@
 </head>
 
 <body>
+
     <header class="bg-gradient-to-br from-primary/20 via-base-100 to-secondary/10 min-h-screen">
         <!-- Navigation -->
         <nav class="container mx-auto max-w-8xl flex items-center justify-between px-6 py-4 border-b border-gray-300">
@@ -163,9 +164,10 @@
             </div>
         </section>
     </header>
+
     <main>
         <!-- Popular Categories -->
-        <section id="popularCategories" class="container mx-auto max-w-7xl py-10 md:py-16 lg:py-28">
+        <section id="popularCategories" class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title with button -->
             <div class="flex items-center justify-between mb-[40px]">
                 <h2 class="text-4xl text-base-300 font-medium">Popular Categories</h2>
@@ -179,17 +181,54 @@
                     </svg>
                 </button>
             </div>
+
             <!-- Category Cards -->
             <div id="popularCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Category cards in coming from PopularCategories.js file -->
+            </div>
+        </section>
+
+        <!-- Popular Services -->
+        <section id="popularServices" class=" py-10 md:py-16 lg:py-28 bg-primary/10">
+            <div class="container mx-auto max-w-7xl px-6">
+                <!-- Section Title with button -->
+                <div class="flex flex-col gap-4 md:flex-row items-center justify-between mb-[40px]">
+                    <h2 class="text-4xl text-base-300 font-medium">Popular Services</h2>
+                    <div class="flex items-center gap-2">
+                        <button
+                            class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
+                            Browse all categories
+                        </button>
+                        <button
+                            class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
+                            Dev & IT
+                        </button>
+                        <button
+                            class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
+                            Digital Marketing
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Popular Services Cards -->
+                <div id="servicesCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Popular services cards will come here from popularServices.js file -->
+                </div>
 
             </div>
         </section>
+
+
+
+
+
 
     </main>
     <footer>
 
     </footer>
     <script src="/scripts/popularCategories.js"></script>
+    <script src="/scripts/popularServices.js"></script>
 </body>
 
 </html>
