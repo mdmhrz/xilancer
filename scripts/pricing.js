@@ -85,10 +85,10 @@ $(document).ready(function () {
                 <!-- Features Section -->
                 <div class="space-y-4">
                     <h4 class="font-semibold text-base-300">Marketplace Plan include:</h4>
-                    <ul class="space-y-4">
+                    <ul class="space-y-2">
                         ${plan.features.map(feature => `
                             <li class="flex items-start">
-                                <div class="flex-shrink-0 w-5 h-5 rounded-full border-2 border-secondary  flex items-center justify-center mt-0.5 mr-3">
+                                <div class="flex-shrink-0 w-5 h-5 rounded-full border border-secondary  flex items-center justify-center mt-0.5 mr-3">
                                     <i class="fa-solid fa-check text-secondary font-semibold text-[10px]"></i>
                                 </div>
                                 <span class="text-gray-600">${feature}</span>

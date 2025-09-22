@@ -167,8 +167,8 @@ $(document).ready(function () {
         $('#trendingCards').css('transform', `translateX(${translateX}px)`);
 
         // Update button states
-        $('#prevBtn').toggleClass('opacity-50', currentIndex === 0);
-        $('#nextBtn').toggleClass('opacity-50', currentIndex >= maxIndex);
+        $('#prevBtn').toggleClass('opacity-50 cursor-not-allowed', currentIndex === 0);
+        $('#nextBtn').toggleClass('opacity-50 cursor-not-allowed', currentIndex >= maxIndex);
     }
 
     // Event listeners

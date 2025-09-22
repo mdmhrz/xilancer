@@ -359,13 +359,13 @@
                     <!-- Arrow left -->
                     <button title="Previous" id="prevBtn"
                         class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/90 transition-colors w-10 h-10 flex items-center justify-center">
-                        <i class="fa-solid fa-arrow-left text-gray-700"></i>
+                        <i class="fa-solid fa-arrow-left text-base-100"></i>
                     </button>
 
                     <!-- Arrow right -->
                     <button title="Next" id="nextBtn"
                         class="absolute right-4  top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/80 transition-colors w-10 h-10 flex items-center justify-center">
-                        <i class="fa-solid fa-arrow-right text-gray-700"></i>
+                        <i class="fa-solid fa-arrow-right text-base-100"></i>
                     </button>
 
                     <!-- Carousel Container -->
@@ -389,14 +389,167 @@
             </div>
         </section>
 
+        <!-- Browse Service By Categories -->
+        <section class=" py-10 md:py-16 lg:py-28 bg-primary/10">
+            <div class="container mx-auto max-w-7xl px-6">
+                <!-- Section Title with button -->
+                <div class="flex items-center justify-between mb-[40px]">
+                    <h2 class="text-4xl text-base-300 font-medium">Browse Service by Categories</h2>
+                    <button
+                        class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
+                        View all services
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Carousel Container -->
+            <div class="relative">
+                <!-- Arrow left -->
+                <button title="Previous" id="prevBtn"
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/90 transition-colors w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-left text-base-100"></i>
+                </button>
+
+                <!-- Arrow right -->
+                <button title="Next" id="nextBtn"
+                    class="absolute right-4  top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/80 transition-colors w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-right text-base-100"></i>
+                </button>
+
+                <!-- Carousel Container -->
+                <div class="carousel-container mx-12">
+                    <div id="browseCategories" class="carousel-track flex gap-8">
+                        <!-- Cards will be inserted here by jQuery -->
+
+                        <div class="bg-[url('./assets/browse-cotegories/service-1.png')]">
+                            <span>8 Services</span>
+                            <h3>Web Development</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
 
 
 
     </main>
-    <footer>
+    <footer class="bg-[url('./assets/footer/footer.png')] text-white relative bg-cover bg-center bg-no-repeat">
+        <div class="absolute inset-0 bg-black/95 z-0"></div>
+        <!-- Main Footer Content -->
+        <div class="max-w-7xl mx-auto px-6 py-16 relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">About</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-[18px]">About
+                                US</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Become Seller</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Find Job</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categories Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Categories</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Design & Creative</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Programming</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Data</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Development & IT</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Writing &
+                                Translation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Finance &
+                                Accounting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Marketing</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Business</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Photography</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Support</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms & condition</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help & Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Subscribe</h3>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        Receive Xilancer news, updates,exclusive discounts and early access.
+                    </p>
+                    <div class="flex">
+                        <input type="email" placeholder="your email address"
+                            class="flex-1 px-4 py-3 bg-gray-800 text-white placeholder-gray-500 border-0 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-l">
+                        <button title="subscribe"
+                            class="px-4 py-3 bg-base-100 rounded-md hover:bg-gray-600 transition-colors rounded-r">
+                            <i class="fas fa-paper-plane text-base-300"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-800 relative">
+            <div class="max-w-7xl mx-auto px-6 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+
+
+                    <div class="flex items-center">
+                        <img src="./assets/footer/footer-logo.svg" alt="">
+                    </div>
+                    <span class="text-gray-400 text-sm">© 2025 All right reserved by xgenious</span>
+
+
+
+                    <!-- Social Icons -->
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="w-6 h-6 bg-base-100 hover:bg-gray-400 hover:text-base-100 transition-colors rounded flex items-center justify-center">
+                            <img src="./assets/footer/facebook.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="w-6 h-6 bg-base-100 hover:bg-gray-400 hover:text-base-100 transition-colors rounded flex items-center justify-center">
+                            <img src="./assets/footer/dribble.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="w-6 h-6 bg-base-100 hover:bg-gray-400 hover:text-base-100 transition-colors rounded flex items-center justify-center">
+                            <img src="./assets/footer/twitter.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="w-6 h-6 bg-base-100 hover:bg-gray-400 hover:text-base-100 transition-colors rounded flex items-center justify-center">
+                            <img src="./assets/footer/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src=" ./scripts/popularCategories.js"></script>
     <script src="./scripts/popularServices.js"></script>
