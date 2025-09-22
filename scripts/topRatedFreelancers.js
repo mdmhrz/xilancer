@@ -9,7 +9,7 @@ $(document).ready(function () {
             rating: 4.0,
             reviews: 212,
             role: "Graphic & UI UX Designer",
-            skills: ["Figma", "Mobile App", "Branding", "Sales Copy", "Adobe Photoshop", "Flyer template"],
+            skills: ["Figma", "Mobile App", "Branding", "Sales Copy", "Adobe Photoshop", "Illustrator"],
             location: "Nicosia, Cyprus",
             rate: "$25-30 / hr"
         },
@@ -42,9 +42,21 @@ $(document).ready(function () {
     // Append profiles dynamically
     profiles.forEach(profile => {
         let skillsHtml = "";
-        profile.skills.forEach(skill => {
+        const maxSkills = 5;
+
+        // Take only the first 5 skills
+        const slicedSkills = profile.skills.slice(0, maxSkills);
+
+        slicedSkills.forEach(skill => {
             skillsHtml += `<span class="bg-gray-200 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">${skill}</span>`;
         });
+
+        
+        if (profile.skills.length > maxSkills) {
+            let extra = profile.skills.length - maxSkills;
+            skillsHtml += `<span class="text-gray-800 text-xs font-medium px-3 py-1 rounded-full">+${extra}</span>`;
+        }
+
 
         let statusColor = profile.status === "online" ? "bg-green-500" : "bg-gray-400";
 
@@ -83,7 +95,7 @@ $(document).ready(function () {
             </div>
 
             <!-- Skills Section -->
-            <div class="flex flex-wrap gap-2 mb-6">${skillsHtml}</div>
+            <div class="flex flex-wrap gap-2 mb-6">${skillsHtml}</div>            
 
             <!-- Location and Rate Section -->
             <div class="grid grid-cols-2 gap-4 mb-6 pb-6">

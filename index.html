@@ -390,8 +390,9 @@
         </section>
 
         <!-- Browse Service By Categories -->
-        <section class=" py-10 md:py-16 lg:py-28 bg-primary/10">
+        <section class="py-10 md:py-16 lg:py-28 bg-primary/10">
             <div class="container mx-auto max-w-7xl px-6">
+
                 <!-- Section Title with button -->
                 <div class="flex items-center justify-between mb-[40px]">
                     <h2 class="text-4xl text-base-300 font-medium">Browse Service by Categories</h2>
@@ -405,38 +406,31 @@
                         </svg>
                     </button>
                 </div>
-            </div>
 
 
-            <!-- Carousel Container -->
-            <div class="relative">
-                <!-- Arrow left -->
-                <button title="Previous" id="prevBtn"
-                    class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/90 transition-colors w-10 h-10 flex items-center justify-center">
-                    <i class="fa-solid fa-arrow-left text-base-100"></i>
-                </button>
+                <!-- Carousel Wrapper -->
+                <div class="relative">
+                    <!-- Arrow left -->
+                    <button title="Previous" id="browsePrevBtn"
+                        class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/90 transition-colors w-10 h-10 flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-left text-base-100"></i>
+                    </button>
 
-                <!-- Arrow right -->
-                <button title="Next" id="nextBtn"
-                    class="absolute right-4  top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/80 transition-colors w-10 h-10 flex items-center justify-center">
-                    <i class="fa-solid fa-arrow-right text-base-100"></i>
-                </button>
+                    <!-- Arrow right -->
+                    <button title="Next" id="browseNextBtn"
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 p-3 bg-secondary rounded-full shadow-lg hover:bg-secondary/80 transition-colors w-10 h-10 flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-right text-base-100"></i>
+                    </button>
 
-                <!-- Carousel Container -->
-                <div class="carousel-container mx-12">
-                    <div id="browseCategories" class="carousel-track flex gap-8">
-                        <!-- Cards will be inserted here by jQuery -->
-
-                        <div class="bg-[url('./assets/browse-cotegories/service-1.png')]">
-                            <span>8 Services</span>
-                            <h3>Web Development</h3>
+                    <!-- Carousel Container -->
+                    <div class="browse-carousel-container mx-12">
+                        <div id="browseCategoriesTrack" class="browse-carousel-track flex gap-6">
+                            <!-- Cards will be injected here via jQuery -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
 
 
         <!-- Top Rated Freelancers -->
@@ -461,12 +455,10 @@
             </div>
         </section>
 
-
-
         <!-- Get Started with Xilancer -->
         <section class="px-6">
             <section
-                class="contaier mx-auto max-w-7xl py-28 bg-gradient-to-r from-primary/10 to-secondary/10 my-24  rounded-lg relative">
+                class="contaier mx-auto max-w-7xl py-28 bg-gradient-to-r from-primary/10 to-secondary/10 mb-24  rounded-lg relative">
                 <div
                     class="absolute bg-[url('./assets/arc.svg')] left-0 top-1/2 -translate-y-1/2 inset-0 w-[70%] bg-no-repeat bg-cover z-0">
                 </div>
@@ -608,6 +600,7 @@
     <script src="./scripts/testimonials.js"></script>
     <script src="./scripts/trendingServices.js"></script>
     <script src="./scripts/pricing.js"></script>
+    <script src="./scripts/browseCategroies.js"></script>
     <script src="./scripts/topRatedFreelancers.js"></script>
 </body>
 
