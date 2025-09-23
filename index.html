@@ -32,47 +32,102 @@
 
 <body>
 
-    <header class="bg-gradient-to-br from-primary/20 via-base-100 to-secondary/10 min-h-screen">
+    <header class="bg-gradient-to-br from-primary/20 via-base-100 to-secondary/10 min-h-screen overflow-visible">
         <!-- Navigation -->
-        <nav class="container mx-auto max-w-8xl flex items-center justify-between px-6 py-4 border-b border-gray-300">
+        <nav id="mainNav"
+            class=" border-b border-gray-200 shadow-sm fixed top-0 left-0 right-0 z-[1000] overflow-visible mb-20">
             <!-- Logo -->
-            <div class="">
-                <img alt="logo" src="./assets//logo.svg" class="w-[157.56px]"></img>
+            <div class="container mx-auto max-w-8xl flex items-center justify-between px-6 py-4">
+                <div>
+                    <img alt="logo" src="./assets/logo.svg" class="w-[157px]">
+                </div>
+
+                <!-- Navigation (Desktop) -->
+                <ul class="hidden lg:flex space-x-8 text-gray-700 font-medium items-center">
+                    <li class="flex items-center gap-1 group relative">
+                        <a href="#" class="hover:text-green-600 transition">Home</a>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-4 h-4 text-gray-500 group-hover:text-green-600 transition" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </li>
+                    <li><a href="#" class="hover:text-green-600 transition">Jobs</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition">Talents</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition">Subscriptions</a></li>
+                    <li class="flex items-center gap-1 group relative">
+                        <a href="#" class="hover:text-green-600 transition">Pages</a>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-4 h-4 text-gray-500 group-hover:text-green-600 transition" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </li>
+                    <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+                </ul>
+
+                <!-- Buttons (Desktop) -->
+                <div class="hidden lg:flex items-center space-x-3">
+                    <button
+                        class="border border-green-600 text-green-600 px-4 py-1 rounded-full hover:bg-green-50 transition">
+                        Community
+                    </button>
+                    <button
+                        class="bg-green-600 text-white text-base px-5 py-1 rounded-full hover:bg-green-700 transition">
+                        Sign Up
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" title="mobile menu"
+                    class="lg:hidden block text-gray-600 hover:text-green-600 text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Mobile Menu -->
+                <div id="mobileMenuArea" class="hidden absolute">
+                    <!-- Overlay -->
+                    <div id="mobileMenuOverlay"
+                        class="fixed inset-0 bg-black/40 backdrop-blur-xs z-[99999] min-h-screen"></div>
+
+                    <!-- Dropdown -->
+                    <div id="mobileMenuDropdown"
+                        class="lg:hidden fixed top-0 bottom-0 right-0 w-72 bg-white shadow-xl px-8 py-6 overflow-y-auto z-[999999] transform translate-x-full transition-transform duration-300 min-h-screen">
+                        <!-- Close Button -->
+                        <button title="close mobile menu" id="closeMobileMenu"
+                            class="text-gray-600 hover:text-red-600 text-2xl mb-6">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                        <!-- Links -->
+                        <ul class="flex flex-col items-start space-y-4 text-gray-700 font-medium">
+                            <li><a href="#" class="hover:text-primary">Home</a></li>
+                            <li><a href="#" class="hover:text-primary">Jobs</a></li>
+                            <li><a href="#" class="hover:text-primary">Talents</a></li>
+                            <li><a href="#" class="hover:text-primary">Subscriptions</a></li>
+                            <li><a href="#" class="hover:text-primary">Pages</a></li>
+                            <li><a href="#" class="hover:text-primary">Contact</a></li>
+                        </ul>
+
+                        <!-- Buttons -->
+                        <div class="flex flex-col gap-4 items-start mt-6 w-full">
+                            <button
+                                class="border border-primary text-primary px-4 py-2 rounded-full hover:bg-primary/20 w-full transition">
+                                Community
+                            </button>
+                            <button
+                                class="bg-primary text-white text-base px-5 py-2 rounded-full hover:bg-primary/80 w-full transition">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Navigation -->
-            <ul class="hidden lg:flex space-x-6 text-gray-700 font-medium">
-                <li class="flex items-center gap-2">
-                    <a href="#" class="hover:text-green-600">Home</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg>
-                </li>
-
-                <li><a href="#" class="hover:text-green-600">Jobs</a></li>
-                <li><a href="#" class="hover:text-green-600">Talents</a></li>
-                <li><a href="#" class="hover:text-green-600">Subscriptions</a></li>
-                <li class="flex items-center gap-2">
-                    <a href="#" class="hover:text-green-600">Pages</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg>
-                </li>
-                <li><a href="#" class="hover:text-green-600">Contact</a></li>
-            </ul>
-
-            <!-- Buttons -->
-            <div class="flex items-center space-x-3">
-                <button class="border border-primary text-primary px-4 py-1 rounded-full hover:bg-green-50">
-                    Community
-                </button>
-                <button class="bg-primary text-base px-5 py-1 rounded-full hover:bg-green-800">
-                    Sign Up
-                </button>
-            </div>
         </nav>
+        <script>
+
+        </script>
 
 
         <!-- Hero Section -->
@@ -81,7 +136,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <!-- Left Content -->
                     <div class="space-y-4 text-center lg:text-left">
-                        <h1 class="text-3xl md:text-[54px] 2xl:text-[58px] font-medium text-black/85 leading-[80px]">
+                        <h1 class="text-4xl md:text-[54px] 2xl:text-[58px] font-semibold text-black/85 leading-normal">
                             Connecting Ideas with the Right Talent
                         </h1>
                         <p class="text-lg text-base-300 max-w-lg mx-auto lg:mx-0">
@@ -104,7 +159,7 @@
                         <!-- Search Input -->
                         <div class="relative max-w-lg mx-auto lg:mx-0 mt-4">
                             <input type="text" placeholder="Search by role, service, skill or keywords"
-                                class="w-full px-6 py-4 pr-16 text-lg rounded-xl border border-gray-300 border border-base-300 focus:border-primary transition-all duration-300 shadow-md outline-none bg-transparent">
+                                class="w-full px-6 py-4 pr-16 text-lg rounded-xl border-gray-300 border border-base-300 focus:border-primary transition-all duration-300 shadow-md outline-none bg-transparent">
                             <button title="search"
                                 class="absolute right-2 top-1/2 -translate-y-1/2 w-12 h-12 bg-secondary text-primary-foreground rounded-xl hover:bg-primary/90 transition-colors duration-300">
                                 <i class="fas fa-search text-base "></i>
@@ -112,7 +167,7 @@
                         </div>
 
                         <!-- Tags -->
-                        <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
+                        <div class="flex flex-wrap gap-2 md:gap-4 justify-center lg:justify-start pt-4">
                             <span
                                 class="px-4 py-2 border border-base-300/50 text-base-300 rounded-lg text-sm font-medium hover:bg-gray-300 transition-all duration-300 cursor-pointer">
                                 Design & Creative <i class="fas fa-arrow-right ml-2"></i>
@@ -137,7 +192,7 @@
                     </div>
 
                     <!-- Right Image Section -->
-                    <div class="relative ">
+                    <div class="relative px-6 md:px-8">
                         <div class="relative flex items-center">
                             <!-- Background Shape -->
                             <img class="absolute inset-0 w-full" src="./assets/banner/back_image.png"
@@ -169,8 +224,8 @@
         <!-- Popular Categories -->
         <section id="popularCategories" class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title with button -->
-            <div class="flex items-center justify-between mb-[40px]">
-                <h2 class="text-4xl text-base-300 font-medium">Popular Categories</h2>
+            <div class="flex flex-col lg:flex-row gap-5 items-center justify-between mb-[40px]">
+                <h2 class="text-4xl text-base-300 font-medium text-center lg:text-left">Popular Categories</h2>
                 <button
                     class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
                     Browse all categories
@@ -192,9 +247,9 @@
         <section id="popularServices" class=" py-10 md:py-16 lg:py-28 bg-primary/10">
             <div class="container mx-auto max-w-7xl px-6">
                 <!-- Section Title with button -->
-                <div class="flex flex-col gap-4 md:flex-row items-center justify-between mb-[40px]">
-                    <h2 class="text-4xl text-base-300 font-medium">Popular Services</h2>
-                    <div class="flex items-center gap-2">
+                <div class="flex flex-col gap-4 lg:flex-row items-center justify-between mb-[40px]">
+                    <h2 class="text-4xl text-base-300 font-medium text-center lg:text-left">Popular Services</h2>
+                    <div class="flex items-center justify-center flex-wrap gap-2">
                         <button
                             class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
                             Browse all categories
@@ -221,12 +276,11 @@
         <!-- Latest Jobs -->
         <section class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title-->
-            <div class="flex flex-col gap-4 md:flex-row items-center justify-between mb-[40px]">
-                <h2 class="text-4xl text-base-300 font-medium">Latest Jobs</h2>
-            </div>
+            <h2 class="text-4xl text-base-300 font-medium mb-[40px] text-center lg:text-left">Latest Jobs</h2>
+
 
             <!-- Job Cards -->
-            <div id="jobCard" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div id="jobCard" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Latest job card will come here from latestJobs.js  -->
             </div>
 
@@ -295,7 +349,8 @@
             class="py-10 px-6 md:py-16 lg:py-28 bg-[url('/assets/testimonial/testimonial.svg')]  bg-center bg-no-repeat bg-contain">
             <div class="container mx-auto max-w-7xl">
                 <!-- Section Title-->
-                <h2 class=" mb-[40px] text-4xl text-base-300 font-medium text-center">What Freelancer are Thinking About
+                <h2 class=" mb-[40px] text-4xl text-base-300 font-medium text-center lg:text-left">What Freelancer are
+                    Thinking About
                     Us</h2>
 
                 <!-- Testimonials Cards -->
@@ -307,7 +362,7 @@
 
         <!-- Mobile App Advertise -->
         <section
-            class="container mx-auto max-w-7xl px-6 py-10 md:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-48 lg:gap-16">
+            class="container mx-auto max-w-7xl px-6 py-10 md:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-48 lg:gap-16">
             <!-- Card 01 -->
             <div class="bg-secondary p-6 rounded-xl relative overflow">
                 <div class="relative z-10">
@@ -342,7 +397,7 @@
                         <img src="./assets/mobile-app/play-store.svg" alt="">
                     </div>
                 </div>
-                <img class="absolute bottom-0 right-3 z-12" src="./assets/mobile-app/phone.png" alt="">
+                <img class="absolute bottom-0 right-3 z-12 hidden md:block" src="./assets/mobile-app/phone.png" alt="">
                 <img class="absolute inset-0 left-0 top-0 z-0" src="./assets/mobile-app/background.png" alt="">
             </div>
         </section>
@@ -352,7 +407,7 @@
             <div class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
 
                 <!-- Section Title-->
-                <h2 class="mb-[40px] text-4xl text-gray-800 font-medium">Trending Services</h2>
+                <h2 class="mb-[40px] text-4xl text-gray-800 font-medium text-center lg:text-left">Trending Services</h2>
 
                 <!-- Carousel Container -->
                 <div class="relative">
@@ -381,7 +436,7 @@
         <!-- Choose Your Plan -->
         <section class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title-->
-            <h2 class="mb-[40px] text-4xl text-gray-800 font-medium text-center">Choose Your Plan</h2>
+            <h2 class="mb-[40px] text-4xl text-gray-800 font-medium text-center lg:text-left">Choose Your Plan</h2>
 
             <!--Pricing Plan Cards -->
             <div id="pricingCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -394,8 +449,9 @@
             <div class="container mx-auto max-w-7xl px-6">
 
                 <!-- Section Title with button -->
-                <div class="flex items-center justify-between mb-[40px]">
-                    <h2 class="text-4xl text-base-300 font-medium">Browse Service by Categories</h2>
+                <div class="flex flex-col lg:flex-row gap-4 items-center justify-between mb-[40px]">
+                    <h2 class="text-4xl text-center lg:text-left text-base-300 font-medium">Browse Service by Categories
+                    </h2>
                     <button
                         class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
                         View all services
@@ -436,8 +492,8 @@
         <!-- Top Rated Freelancers -->
         <section id="topRated" class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title with button -->
-            <div class="flex items-center justify-between mb-[40px]">
-                <h2 class="text-4xl text-base-300 font-medium">Top Rated Freelancers</h2>
+            <div class="flex flex-col lg:flex-row gap-4 items-center justify-between mb-[40px]">
+                <h2 class="text-4xl text-center lg:text-left text-base-300 font-medium">Top Rated Freelancers</h2>
                 <button
                     class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
                     Browse all
@@ -456,9 +512,9 @@
         </section>
 
         <!-- Get Started with Xilancer -->
-        <section class="px-6">
+        <section class="px-6 mb-12">
             <section
-                class="contaier mx-auto max-w-7xl py-28 bg-gradient-to-r from-primary/10 to-secondary/10 mb-24  rounded-lg relative">
+                class="contaier mx-auto max-w-7xl px-10 py-10 md:py-20 lg:py-28 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg relative">
                 <div
                     class="absolute bg-[url('./assets/arc.svg')] left-0 top-1/2 -translate-y-1/2 inset-0 w-[70%] bg-no-repeat bg-cover z-0">
                 </div>
@@ -467,7 +523,7 @@
                     <h3 class=" text-[36px] text-base-300 font-medium">Get Started with Xilancer</h3>
                     <p class="text-base-300 max-w-[600px] text-center">Connect with top freelancers or showcase your
                         skills
-                        to clients worldwide.  Start your journey today and
+                        to clients worldwide. Start your journey today and
                         turn ideas into successful projects.</p>
                     <button
                         class="text-base-100 flex font-medium hover:text-base-100 bg-secondary hover:bg-primary transition-all duration-300 px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
@@ -546,7 +602,7 @@
                     </p>
                     <div class="flex">
                         <input type="email" placeholder="your email address"
-                            class="flex-1 px-4 py-3 bg-gray-800 text-white placeholder-gray-500 border-0 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-l">
+                            class="flex-1 px-4 py-3 bg-gray-800 text-white placeholder-gray-500 border-0 focus:outline-none rounded-l">
                         <button title="subscribe"
                             class="px-4 py-3 bg-base-100 rounded-md hover:bg-gray-600 transition-colors rounded-r">
                             <i class="fas fa-paper-plane text-base-300"></i>
@@ -559,7 +615,7 @@
         <!-- Footer Bottom -->
         <div class="border-t border-gray-800 relative">
             <div class="max-w-7xl mx-auto px-6 py-6">
-                <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
 
 
                     <div class="flex items-center">
@@ -594,6 +650,7 @@
     </footer>
 
     <!-- All Scripts -->
+    <script src="./scripts/header.js"></script>
     <script src=" ./scripts/popularCategories.js"></script>
     <script src="./scripts/popularServices.js"></script>
     <script src="./scripts/latestJobs.js"></script>
