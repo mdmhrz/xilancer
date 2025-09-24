@@ -108,7 +108,7 @@ $(document).ready(function () {
 
 
         $("#jobCard").append(
-            `<div class="rounded-2xl border border-gray-200 p-6 shadow-sm">
+            `<div class="card-animate rounded-2xl border border-gray-200 p-6 shadow-sm">
                     <h2 class="text-xl font-semibold text-base-300 mb-4 leading-tight">${job.title}</h2>
 
                     <div class="flex items-center gap-3 mb-4">

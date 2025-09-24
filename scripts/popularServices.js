@@ -90,7 +90,7 @@ $(document).ready(function () {
     // Loop with jQuery
     $.each(services, function (index, service) {
         $("#servicesCards").append(
-            `<div class="bg-white rounded-2xl shadow-lg w-full overflow-hidden mx-auto">
+            `<div class="card-animate bg-white rounded-2xl shadow-lg w-full overflow-hidden mx-auto hover:scale-110 transition-all duration-300">
                         <!-- Card Image Section -->
                         <figure class="relative w-full h-58 overflow-hidden px-4 pt-4">
                             <img src="${service.bannerImage}" alt="${service.title}"

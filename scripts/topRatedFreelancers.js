@@ -51,7 +51,7 @@ $(document).ready(function () {
             skillsHtml += `<span class="bg-gray-200 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">${skill}</span>`;
         });
 
-        
+
         if (profile.skills.length > maxSkills) {
             let extra = profile.skills.length - maxSkills;
             skillsHtml += `<span class="text-gray-800 text-xs font-medium px-3 py-1 rounded-full">+${extra}</span>`;
@@ -61,7 +61,7 @@ $(document).ready(function () {
         let statusColor = profile.status === "online" ? "bg-green-500" : "bg-gray-400";
 
         let card = `
-        <div class="rounded-2xl shadow-xl p-6 w-full border bg-white">
+        <div class="card-animate rounded-2xl shadow-xl p-6 w-full border bg-white">
             <!-- Header Section -->
             <div class="flex items-start gap-4 mb-6 sm:mb-8">
                 <!-- Profile Image and Status Dot -->

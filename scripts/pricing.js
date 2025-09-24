@@ -63,7 +63,7 @@ $(document).ready(function () {
             '<div class="absolute -top-4 left-1/2 transform -translate-x-1/2"><span class="bg-secondary text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</span></div>' : '';
 
         $("#pricingCards").append(`
-            <div class="bg-white rounded-2xl ${cardClass} p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="card-animate bg-white rounded-2xl ${cardClass} p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 ${popularBadge}
                 
                 <!-- Plan Header -->

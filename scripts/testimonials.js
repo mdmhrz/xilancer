@@ -53,7 +53,7 @@ $(document).ready(function () {
 
 
         $("#testimonialsCards").append(
-            `<div class="flex flex-col justify-center items-center bg-white p-6 rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.2)]">
+            `<div class="card-animate flex flex-col justify-center items-center bg-white p-6 rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.2)]">
             <img class="mb-2" src="${testimony.image}" alt="User image">
             <h3 class="text-base-300 font-medium text-[18px]">${testimony.name}</h3>
             <p class="mb-6 text-base-300 text-[14px]">${testimony.position}</p>

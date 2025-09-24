@@ -11,7 +11,7 @@ $(document).ready(function () {
     // Generate cards dynamically
     $.each(browseServices, function (index, service) {
         $("#browseCategoriesTrack").append(`
-      <div class="browse-service-card rounded-2xl bg-cover bg-center text-white p-6 shadow-lg"
+      <div class="browse-service-card card-animate rounded-2xl bg-cover bg-center text-white p-6 shadow-lg"
            style="background-image: url('${service.image}'); height: 350px;">
         <span class="text-sm ">${service.quantity} Services</span>
         <h3 class="text-xl font-medium mt-2">${service.name}</h3>

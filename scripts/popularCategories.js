@@ -34,7 +34,7 @@ $(document).ready(function () {
     // Loop with jQuery
     $.each(services, function (index, service) {
         $("#popularCards").append(
-            `<div class="bg-base-100 shadow-[0_0_15px_rgba(0,0,0,0.2)] p-6 rounded-lg  hover:scale-110 transition-all duration-300">
+            `<div class="category-card bg-base-100 shadow-[0_0_15px_rgba(0,0,0,0.2)] p-6 rounded-lg  hover:scale-110 transition-all duration-300">
                     <img class="p-2 bg-primary/10 rounded-full mb-[12px]" src="${service.image}"
                         alt="Categories Logo">
                     <h3 class="text-[18px] font-medium text-base-300 mb-[6px]">${service.name}</h3>

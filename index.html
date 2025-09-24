@@ -9,6 +9,9 @@
     <script src="https://kit.fontawesome.com/c4e937c9d9.js" crossorigin="anonymous"></script>
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -102,12 +105,12 @@
 
                         <!-- Links -->
                         <ul class="flex flex-col items-start space-y-4 text-gray-700 font-medium">
-                            <li><a href="#" class="hover:text-primary">Home</a></li>
-                            <li><a href="#" class="hover:text-primary">Jobs</a></li>
-                            <li><a href="#" class="hover:text-primary">Talents</a></li>
-                            <li><a href="#" class="hover:text-primary">Subscriptions</a></li>
+                            <li><a href="#home" class="hover:text-primary">Home</a></li>
+                            <li><a href="#popularServices" class="hover:text-primary">Jobs</a></li>
+                            <li><a href="#topRated" class="hover:text-primary">Talents</a></li>
+                            <li><a href="#subscription" class="hover:text-primary">Subscriptions</a></li>
                             <li><a href="#" class="hover:text-primary">Pages</a></li>
-                            <li><a href="#" class="hover:text-primary">Contact</a></li>
+                            <li><a href="#joinus" class="hover:text-primary">Contact</a></li>
                         </ul>
 
                         <!-- Buttons -->
@@ -131,7 +134,7 @@
             <div class="container mx-auto max-w-7xl">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <!-- Left Content -->
-                    <div class="space-y-4 text-center lg:text-left">
+                    <div class="space-y-4 text-center lg:text-left left-content">
                         <h1 class="text-5xl md:text-[46px] 2xl:text-[56px] font-semibold text-black/85 leading-normal">
                             Connecting Ideas with the Right Talent
                         </h1>
@@ -188,7 +191,7 @@
                     </div>
 
                     <!-- Right Image Section -->
-                    <div class="relative px-6 md:px-8">
+                    <div class="relative px-6 md:px-8 right-image">
                         <div class="relative flex items-center">
                             <!-- Background Shape -->
                             <img class="absolute inset-0 w-full" src="./assets/banner/back_image.png"
@@ -201,12 +204,12 @@
 
                             <!-- Small Info Cards -->
                             <div
-                                class="absolute -left-8 p-2 md:p-4 bg-white rounded-xl shadow-lg flex items-center gap-2">
+                                class="absolute -left-8 p-2 md:p-4 bg-white rounded-xl shadow-lg flex items-center gap-2 info-card">
                                 <img src="./assets/banner/complete.svg" alt="">
                                 <span class="font-medium text-gray-700">Complete Project</span>
                             </div>
                             <div
-                                class="absolute bottom-10 md:bottom-1/4 -right-8 p-2 md:p-4 bg-white rounded-xl shadow-lg flex items-center gap-2">
+                                class="absolute bottom-10 md:bottom-1/4 -right-8 p-2 md:p-4 bg-white rounded-xl shadow-lg flex items-center gap-2 info-card">
                                 <img src="./assets/banner/hired.svg" alt="">
                                 <span class="font-medium text-gray-700">Hired 41+ Talents</span>
                             </div>
@@ -222,7 +225,8 @@
         <section id="popularCategories" class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title with button -->
             <div class="flex flex-col lg:flex-row gap-5 items-center justify-between mb-[40px]">
-                <h2 class="text-4xl text-base-300 font-medium text-center lg:text-left">Popular Categories</h2>
+                <h2 class="text-4xl text-base-300 font-medium text-center lg:text-left animate-on-scroll">Popular
+                    Categories</h2>
                 <button
                     class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
                     Browse all categories
@@ -245,7 +249,8 @@
             <div class="container mx-auto max-w-7xl px-6">
                 <!-- Section Title with button -->
                 <div class="flex flex-col gap-4 lg:flex-row items-center justify-between mb-[40px]">
-                    <h2 class="text-4xl text-base-300 font-medium text-center lg:text-left">Popular Services</h2>
+                    <h2 class="text-4xl text-base-300 font-medium text-center lg:text-left animate-on-scroll">Popular
+                        Services</h2>
                     <div class="flex items-center justify-center flex-wrap gap-2">
                         <button
                             class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
@@ -273,7 +278,8 @@
         <!-- Latest Jobs -->
         <section class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title-->
-            <h2 class="text-4xl text-base-300 font-medium mb-[40px] text-center lg:text-left">Latest Jobs</h2>
+            <h2 class="text-4xl text-base-300 font-medium mb-[40px] text-center lg:text-left animate-on-scroll">Latest
+                Jobs</h2>
 
 
             <!-- Job Cards -->
@@ -289,7 +295,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <!-- Left Content -->
                     <div class="space-y-8">
-                        <h2 class="text-3xl md:text-4xl font-medium leading-tight">
+                        <h2 class="text-3xl md:text-4xl font-medium leading-tight animate-on-scroll">
                             All You Need to Hire The Best
                         </h2>
 
@@ -346,7 +352,8 @@
             class="py-10 md:py-16 lg:py-28 bg-[url('/assets/testimonial/testimonial.svg')]  bg-center bg-no-repeat bg-contain">
             <div class="container mx-auto max-w-7xl px-6">
                 <!-- Section Title-->
-                <h2 class=" mb-[40px] text-4xl text-base-300 font-medium text-center lg:text-left">What Freelancer are
+                <h2 class=" mb-[40px] text-4xl text-base-300 font-medium text-center lg:text-left animate-on-scroll">
+                    What Freelancer are
                     Thinking About
                     Us</h2>
 
@@ -402,9 +409,9 @@
         <!-- Trending Services -->
         <section class=" bg-primary/10">
             <div class=" container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
-
                 <!-- Section Title-->
-                <h2 class="mb-[40px] text-4xl text-gray-800 font-medium text-center lg:text-left">Trending Services</h2>
+                <h2 class="mb-[40px] text-4xl text-gray-800 font-medium text-center lg:text-left animate-on-scroll">
+                    Trending Services</h2>
 
                 <!-- Carousel Container -->
                 <div class="relative">
@@ -433,7 +440,8 @@
         <!-- Choose Your Plan -->
         <section id="subscription" class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title-->
-            <h2 class="mb-[40px] text-4xl text-gray-800 font-medium text-center lg:text-left">Choose Your Plan</h2>
+            <h2 class="mb-[40px] text-4xl text-gray-800 font-medium text-center lg:text-left animate-on-scroll">Choose
+                Your Plan</h2>
 
             <!--Pricing Plan Cards -->
             <div id="pricingCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -447,7 +455,8 @@
 
                 <!-- Section Title with button -->
                 <div class="flex flex-col lg:flex-row gap-4 items-center justify-between mb-[40px]">
-                    <h2 class="text-4xl text-center lg:text-left text-base-300 font-medium">Browse Service by Categories
+                    <h2 class="text-4xl text-center lg:text-left text-base-300 font-medium animate-on-scroll">Browse
+                        Service by Categories
                     </h2>
                     <button
                         class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
@@ -490,7 +499,8 @@
         <section id="topRated" class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title with button -->
             <div class="flex flex-col lg:flex-row gap-4 items-center justify-between mb-[40px]">
-                <h2 class="text-4xl text-center lg:text-left text-base-300 font-medium">Top Rated Freelancers</h2>
+                <h2 class="text-4xl text-center lg:text-left text-base-300 font-medium animate-on-scroll">Top Rated
+                    Freelancers</h2>
                 <button
                     class="text-primary flex font-medium hover:text-base-100 hover:bg-primary transition-all duration-300 border px-4 py-2 rounded-lg border-primary/50 items-center gap-2">
                     Browse all
@@ -517,7 +527,7 @@
                 </div>
 
                 <div class="text-center relative z-10 flex items-center justify-center flex-col gap-6">
-                    <h3 class=" text-[36px] text-base-300 font-medium">Get Started with Xilancer</h3>
+                    <h3 class=" text-[36px] text-base-300 font-medium animate-on-scroll">Get Started with Xilancer</h3>
                     <p class="text-base-300 max-w-[600px] text-center">Connect with top freelancers or showcase your
                         skills
                         to clients worldwide. Start your journey today and
@@ -657,6 +667,7 @@
     <script src="./scripts/pricing.js"></script>
     <script src="./scripts/browseCategroies.js"></script>
     <script src="./scripts/topRatedFreelancers.js"></script>
+    <script src="./scripts/animation.js"></script>
 </body>
 
 </html>
