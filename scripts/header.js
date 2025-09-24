@@ -14,9 +14,9 @@ $(document).ready(function () {
     // Add background on scroll
     $(window).scroll(function () {
         if ($(this).scrollTop() > 10) {
-            $("#mainNav").addClass("bg-primary/30 backdrop-blur-md shadow-md");
+            $("#mainNav").addClass("bg-white/70 backdrop-blur-md shadow-md");
         } else {
-            $("#mainNav").removeClass("bg-primary/30 backdrop-blur-md shadow-md");
+            $("#mainNav").removeClass("bg-white/70 backdrop-blur-md shadow-md");
         }
     });
 });
