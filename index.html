@@ -32,7 +32,7 @@
 
 <body>
 
-    <header
+    <header id="home"
         class="bg-gradient-to-br from-primary/20 via-base-100 to-secondary/10 min-h-screen overflow-visible flex items-center justify-center pt-10">
         <!-- Navigation -->
         <nav id="mainNav"
@@ -46,16 +46,16 @@
                 <!-- Navigation (Desktop) -->
                 <ul class="hidden lg:flex space-x-8 text-gray-700 font-medium items-center">
                     <li class="flex items-center gap-1 group relative">
-                        <a href="#" class="hover:text-green-600 transition">Home</a>
+                        <a href="#home" class="hover:text-green-600 transition">Home</a>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="w-4 h-4 text-gray-500 group-hover:text-green-600 transition" fill="none"
                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
                     </li>
-                    <li><a href="#" class="hover:text-green-600 transition">Jobs</a></li>
-                    <li><a href="#" class="hover:text-green-600 transition">Talents</a></li>
-                    <li><a href="#" class="hover:text-green-600 transition">Subscriptions</a></li>
+                    <li><a href="#popularServices" class="hover:text-green-600 transition">Jobs</a></li>
+                    <li><a href="#topRated" class="hover:text-green-600 transition">Talents</a></li>
+                    <li><a href="#subscription" class="hover:text-green-600 transition">Subscriptions</a></li>
                     <li class="flex items-center gap-1 group relative">
                         <a href="#" class="hover:text-green-600 transition">Pages</a>
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
                     </li>
-                    <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+                    <li><a href="#joinus" class="hover:text-green-600 transition">Contact</a></li>
                 </ul>
 
                 <!-- Buttons (Desktop) -->
@@ -431,7 +431,7 @@
         </section>
 
         <!-- Choose Your Plan -->
-        <section class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
+        <section id="subscription" class="container mx-auto max-w-7xl px-6 py-10 md:py-16 lg:py-28">
             <!-- Section Title-->
             <h2 class="mb-[40px] text-4xl text-gray-800 font-medium text-center lg:text-left">Choose Your Plan</h2>
 
@@ -509,7 +509,7 @@
         </section>
 
         <!-- Get Started with Xilancer -->
-        <section class="container mx-auto max-w-7xl px-6 mb-12">
+        <section id="joinus" class="container mx-auto max-w-7xl px-6 mb-12">
             <div
                 class="contaier mx-auto max-w-7xl px-10 py-10 md:py-20 lg:py-28 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg relative">
                 <div
@@ -536,7 +536,8 @@
             </div>
         </section>
     </main>
-    <footer class="bg-[url('./assets/footer/footer.png')] text-white relative bg-cover bg-center bg-no-repeat">
+    <footer id="footer"
+        class="bg-[url('./assets/footer/footer.png')] text-white relative bg-cover bg-center bg-no-repeat">
         <div class="absolute inset-0 bg-black/95 z-0"></div>
         <!-- Main Footer Content -->
         <div class="max-w-7xl mx-auto px-6 py-16 relative">
