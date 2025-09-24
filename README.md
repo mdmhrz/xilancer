@@ -181,8 +181,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Created by:** [Your Name](https://github.com/mdmhrz)
 
 - 🐙 **GitHub**: [@mdmhrz](https://github.com/mdmhrz)
-- 🌐 **Portfolio**: [Your Portfolio Website]
-- 📧 **Email**: your.email@example.com
+- 🌐 **Portfolio**: [Portfolio](https://mdmhrz.netlify.app/)
+- 📧 **Email**: mdmobarakhossainrazu@gmail.com
 
 ## 🙏 Acknowledgments
 
