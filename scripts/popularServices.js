@@ -94,7 +94,7 @@ $(document).ready(function () {
     }
 
     // Default render Dev & IT
-    renderServices(services.filter(service => service.category === "Dev & IT"));
+    renderServices(services);
 
     // Button click event
     $(".category-btn").click(function () {
